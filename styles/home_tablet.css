@@ -1,0 +1,75 @@
+@media screen and (max-width: 1080px) {
+    /* ____HEADER____ */
+
+    /* ____BANNER____ */
+    #banner {
+        height: 640px;
+        border-radius: 0 0 0 10rem;
+        background-image: url("../images/home-banner-tablet.png");
+    }
+
+    .banner-desc {
+        width: 100%;
+    }
+
+    /* ____READ MORE____ */
+    .ctr-more {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .more-item {
+        width: 50%;
+        margin-bottom: 4rem;
+    }
+
+    .more-item p {
+        margin-bottom: 2rem;
+    }
+
+
+    /* ____CALL____ */
+    .call-desc {
+        width: 60%;
+    }
+
+    .call-img {
+        width: 40%;
+        height: 560px;
+        border-radius: 0 10rem 0 4rem;
+    }
+
+    /* ____ABOUT US____ */
+    .about-card-ctr {
+        flex-wrap: wrap;
+    }
+
+    .about-card {
+        width: 48%;
+    }
+
+    /* COUNT */
+    .ctr-count {
+        flex-wrap: wrap;
+    }
+
+    .count-item {
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+
+    .count-item:nth-child(even) {
+        border: none;
+    }
+
+
+    /* ARTICLE & NEWS */
+    .ctr-news {
+        flex-wrap: wrap;
+    }
+
+    .news-card {
+        width: 48%;
+    }
+
+}

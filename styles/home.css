@@ -1,0 +1,473 @@
+/* change text styles */
+#about h2,
+#project h2,
+#project p,
+#count h2,
+#count p,
+#news h2,
+#news p,
+#join h2,
+#join p {
+    text-align: center;
+}
+
+/* index globol container */
+section {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 6rem 0 6rem 0;
+}
+
+/* index global container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ctr-title {
+    margin-bottom: 4rem;
+}
+
+/* ____HEADER____ */
+/* header container */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+    max-width: 1920px;
+    margin: 2.5rem auto;
+}
+
+/* header - left - logo */
+.header-logo img {
+    width: 2rem;
+    margin-right: 0.75rem;
+}
+
+/* header - left - brand name */
+.header-logo span {
+    font-size: 2.5rem;
+    font-family: var(--font-dm);
+}
+
+/* header right - nav */
+.header-nav ol {
+    display: flex;
+}
+
+.header-nav ol li:not(:first-child) {
+    padding-left: 2rem;
+}
+
+.header-nav ol a,
+.nav-icon {
+    font-size: 1.25rem;
+}
+
+
+/* header hide nav icon */
+.nav-icon {
+    display: none;
+}
+
+
+
+/* ____BANNER____ */
+/* banner - background & background image */
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1042px;
+    border-radius: 0 0 0 18rem;
+    background-image: url("../images/home-banner-web.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* banner - container */
+.ctr-banner {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* banner - description */
+.banner-desc {
+    width: 60%;
+}
+
+.banner-desc p {
+    margin-bottom: 1.5rem;
+}
+
+/* ____READ MORE____ */
+/* read more - container */
+.ctr-more {
+    display: flex;
+}
+
+/* read more - item */
+.more-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem 0 3rem;
+    text-align: center;
+}
+
+/* read more - text style (margin) */
+.more-item h4 {
+    margin-bottom: 1.25rem;
+}
+
+.more-item p {
+    margin-bottom: 3.25rem;
+}
+
+
+/* ____CALL____ */
+/* call - container */
+.ctr-call {
+    display: flex;
+    align-items: center;
+}
+
+/* call - left - description */
+.call-desc {
+    width: 40%;
+    margin-right: 4rem;
+}
+
+/* call - right - image mask */
+.call-img {
+    overflow: hidden;
+    width: 60%;
+    border-radius: 0 20rem 0 7.5rem;
+    aspect-ratio: 653 / 700;
+}
+
+.call-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+
+/* call - phone icon & text */
+/* call - phone icon & text - container */
+.call-phone-ctr {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0 3rem 0;
+}
+
+/* call - phone icon & text - icon background style */
+.icon-phone-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background-color: var(--btn-clr-pri-light);
+}
+
+/* call - phone icon & text - icon style */
+.call-phone-ctr i {
+    font-size: 1.5rem;
+    color: var(--btn-clr-icon-pri);
+}
+
+/* ____ABOUT US____ */
+/* about us - container */
+.ctr-about {
+    padding-top: 3rem;
+    background-color: var(--bg-clr-pri-light);
+    border-radius: 4.5rem;
+}
+
+/* about us - card container */
+.about-card-ctr {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+/* about us - card background */
+.about-card {
+    padding: 2rem 3rem 2.5rem 3rem;
+    background-color: var(--bg-clr-white);
+    border-radius: 3rem;
+}
+
+/* about us - card - info container */
+.about-info-ctr {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+/* about us - card - info container > face image */
+.about-info-face {
+    overflow: hidden;
+    height: 5rem;
+    height: 5rem;
+    margin: 1rem 1.25rem 1rem 0;
+    border-radius: 50%;
+}
+
+.about-info-face img {
+    object-fit: cover;
+}
+
+/* ____BRAND____ */
+/* brand */
+.ctr-brand {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.brand-img-box {
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-img-box img {
+    width: 50%;
+}
+
+
+/* PROJECT */
+/* project - container layout */
+.ctr-project {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+}
+
+/* project - card - cover image */
+/* project - card - cover image - div styles */
+.project-cover {
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border-radius: 0 80px 0 0;
+    aspect-ratio: 1 / 1;
+}
+
+.project-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+/* project - card - cover image - border radius styles */
+.project-card:nth-child(1) .project-cover {
+    border-radius: 0 80px 0 0;
+}
+
+.project-card:nth-child(2) .project-cover {
+    border-radius: 80px 0 0 0;
+}
+
+.project-card:nth-child(3) .project-cover {
+    border-radius: 0 0 80px 0;
+}
+
+.project-card:nth-child(4) .project-cover {
+    border-radius: 0 0 0 80px;
+}
+
+/* project - card - bottom - description and button layout*/
+.project-desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ____COUNT____ */
+/* count container layout */
+.ctr-count {
+    display: flex;
+}
+
+.count-item {
+    padding: 0 1.5rem;
+    width: 25%;
+}
+
+/* count - divider style */
+.count-item:not(:last-child) {
+    border-right: 1px solid var(--pri);
+}
+
+/* count - change text style */
+.count-item h1 {
+    text-align: center;
+    color: var(--pri);
+}
+
+/* ____ARTICLE & NEWS____ */
+/* article and news - container */
+.ctr-news {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+/* article and news - card container */
+.news-card {
+    padding: 20px 20px 40px 20px;
+    border-radius: 62px;
+    border: 1px solid var(--grey-light);
+}
+
+/* article & news - change even cards background & button color */
+.news-card:nth-child(even) {
+    background-color: var(--pri-light);
+}
+
+.news-card:nth-child(even) .btn-go {
+    background-color: var(--bg-clr-white);
+}
+
+/* article & news - change h4 text style */
+.news-card h4 {
+    margin: 0.75rem 0 3rem;
+}
+
+/* article & news - card - cover image style */
+.news-cover {
+    position: relative;
+    border-radius: 45px 45px 0 0;
+    aspect-ratio: 336 / 288;
+    overflow: hidden;
+}
+
+.news-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* article & news - card - cover - tag style & position */
+.news-tag {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 8rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    line-height: 2.5rem;
+    background-color: var(--bg-clr-white);
+    border-radius: 0.5rem 0.5rem 0.5rem 0;
+}
+
+/* article & news - card - date & button container */
+.news-date-ctr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+
+/* ____JOIN____ */
+.ctr-join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1.25rem;
+    color: var(--text-clr-white);
+    background-color: var(--black);
+    border-radius: 4.5rem;
+}
+
+
+/* FOOTER */
+footer {
+    margin-top: 112px;
+}
+
+#footer h4 {
+    margin-bottom: 2rem;
+}
+
+/* footer container */
+.ctr-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* footer coloum 1 - info */
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-right: 3rem;
+}
+
+/* footer - info - brand icon */
+.footer-info img {
+    width: 32px;
+    margin-right: 0.75rem;
+}
+
+/* footer - info - change h2 text style (for brand name) */
+.footer-info h2 {
+    font-size: 2.5rem;
+}
+
+/* footer - info - social media icon */
+.social-media i {
+    margin-top: 2rem;
+    padding-right: 1.5rem;
+    font-size: 1.25rem;
+}
+
+/* footer coloum 2 - nav layout */
+.footer-nav {
+    width: 18%;
+}
+
+/* footer coloum 4 - nav layout (let last child larger) */
+.footer-contact {
+    width: 24%;
+}
+
+/* footer - nav - change text style */
+#footer p,
+.footer-nav a {
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.footer-nav li {
+    height: 3rem;
+}
+
+/* footer - copyright */
+.footer-bottom {
+    margin-top: 6rem;
+    border-top: 1px solid var(--grey-light);
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
